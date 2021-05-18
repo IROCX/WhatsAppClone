@@ -1,13 +1,20 @@
-import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import * as React from "react";
+import { StyleSheet, FlatList } from "react-native";
 
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import EditScreenInfo from "../components/EditScreenInfo";
+import { Text, View } from "../components/Themed";
+import ChatItem from "../components/ChatItem";
+import chatRooms from "../data/chatRooms";
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-     
+      <FlatList
+        style={styles.list}
+        data={chatRooms}
+        renderItem={({ item }) => <ChatItem chatRoom={item} />}
+        keyExtractor={(item) => item.id}
+      />
     </View>
   );
 }
@@ -15,16 +22,9 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+  list: {
+    width: "100%",
   },
 });

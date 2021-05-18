@@ -39,7 +39,7 @@ export default function BottomTabNavigator() {
     >
       <MainTab.Screen
         name="Camera"
-        component={TabOneNavigator}
+        component={ChatNavigator}
         options={{
           tabBarIcon: ({ color }) => (
             <Fontisto name="camera" color={color} size={20} />
@@ -47,9 +47,9 @@ export default function BottomTabNavigator() {
           tabBarLabel: () => null,
         }}
       />
-      <MainTab.Screen name="Chats" component={TabOneNavigator} />
-      <MainTab.Screen name="Status" component={TabOneNavigator} />
-      <MainTab.Screen name="Calls" component={TabOneNavigator} />
+      <MainTab.Screen name="Chats" component={ChatNavigator} />
+      <MainTab.Screen name="Status" component={ChatNavigator} />
+      <MainTab.Screen name="Calls" component={ChatNavigator} />
     </MainTab.Navigator>
   );
 }
@@ -67,7 +67,7 @@ function TabBarIcon(props: {
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
 const TabOneStack = createStackNavigator<TabOneParamList>();
 
-function TabOneNavigator() {
+function ChatNavigator() {
   return (
     <TabOneStack.Navigator>
       <TabOneStack.Screen
