@@ -8,6 +8,7 @@ import {
 
 import React from "react";
 import { ChatRoom } from "../types";
+// @ts-ignore
 import sample from "./../assets/images/icon.png";
 import moment from "moment";
 import { useNavigation } from "@react-navigation/native";

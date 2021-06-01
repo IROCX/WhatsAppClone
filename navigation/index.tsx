@@ -15,10 +15,9 @@ import LinkingConfiguration from "./LinkingConfiguration";
 
 import {FontAwesome5, MaterialCommunityIcons, MaterialIcons, Octicons} from "@expo/vector-icons";
 import ChatRoomScreen from "../screens/ChatRoomScreen";
+import NewChatSelectorScreen from "../screens/NewChatSelectorScreen";
 
-export default function Navigation({
-                                       colorScheme,
-                                   }: {
+export default function Navigation({colorScheme,}: {
     colorScheme: ColorSchemeName;
 }) {
     return (
@@ -36,6 +35,8 @@ export default function Navigation({
 const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
+    // @ts-ignore
+    // @ts-ignore
     // @ts-ignore
     // @ts-ignore
     // @ts-ignore
@@ -94,6 +95,10 @@ function RootNavigator() {
                         </View>
                     )
                 })}
+            />
+            <Stack.Screen
+                name="Contacts"
+                component={NewChatSelectorScreen}
             />
         </Stack.Navigator>
     );

@@ -4,50 +4,52 @@
  */
 
 export type RootStackParamList = {
-  Root: undefined;
-  NotFound: undefined;
-  ChatRoom: undefined;
+    Root: undefined;
+    NotFound: undefined;
+    ChatRoom: undefined;
+    Contacts: undefined;
 };
 
 export type MainTabParamList = {
-  Camera: undefined;
-  Chats: undefined;
-  Status: undefined;
-  Calls: undefined;
+    Camera: undefined;
+    Chats: undefined;
+    Status: undefined;
+    Calls: undefined;
 };
 
 export type TabOneParamList = {
-  ChatScreen: undefined;
+    ChatScreen: undefined;
 };
 
 export type TabTwoParamList = {
-  TabTwoScreen: undefined;
+    TabTwoScreen: undefined;
 };
 export type User = {
-  id: String;
-  name: String;
-  imageUri: String;
+    id: String;
+    name: String;
+    imageUri: String;
+    status: String;
 };
 
 export type ChatUser = {
-  id: String;
-  name: String;
+    id: String;
+    name: String;
 };
 
 export type Message = {
-  id: String;
-  content: String;
-  createdAt: string;
+    id: String;
+    content: String;
+    createdAt: string;
 };
 
 export type ChatRoom = {
-  id: String;
-  users: User[];
-  lastMessage: Message;
+    id: String;
+    users: User[];
+    lastMessage: Message;
 };
 export type ChatMessage = {
-  id: String,
-  content: String,
-  createdAt: string,
-  user: ChatUser
+    id: String,
+    content: String,
+    createdAt: string,
+    user: ChatUser
 };
