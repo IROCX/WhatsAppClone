@@ -5,6 +5,7 @@ import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import ChatItem from "../components/ChatItem";
 import chatRooms from "../data/chatRooms";
+import ChatInput from "../components/ChatInput";
 
 export default function TabOneScreen() {
   return (
