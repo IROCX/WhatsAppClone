@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-whatsappclone-dev-164409-authRole",
+      "UnauthRoleArn": "arn:aws:iam::816244812615:role/amplify-whatsappclone-dev-164409-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::816244812615:role/amplify-whatsappclone-dev-164409-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-whatsappclone-dev-164409-deployment",
+      "UnauthRoleName": "amplify-whatsappclone-dev-164409-unauthRole",
+      "StackName": "amplify-whatsappclone-dev-164409",
+      "StackId": "arn:aws:cloudformation:ap-south-1:816244812615:stack/amplify-whatsappclone-dev-164409/aa827fa0-c393-11eb-986e-0a7109dfafde",
+      "AmplifyAppId": "d61dcll13wsy8"
+    },
+    "categories": {
+      "auth": {
+        "whatsappclonebbd192df": {}
+      }
+    }
+  }
+}
